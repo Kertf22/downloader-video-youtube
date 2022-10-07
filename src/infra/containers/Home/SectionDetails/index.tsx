@@ -9,7 +9,7 @@ const SectionDetails = () => {
         <div className={homeStyle["section"]}>
             <p> The SaveDownHere is a great service for those looking for a system to save videos and music from YouTube, our system has what is most modern for the conversion of videos into audios and allows the download of videos in various formats, as long as the video is in good quality.</p>
 
-            <p> Now you don't need to worry about add  some extention to your browser, just use our system and download your favorite videos and audios.</p>
+            <p> Now you don&apos;t need to worry about add  some extention to your browser, just use our system and download your favorite videos and audios.</p>
 
 
             <div className={style["section-details-content"]}>
