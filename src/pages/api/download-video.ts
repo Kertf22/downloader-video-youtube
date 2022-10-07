@@ -1,7 +1,6 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import type { NextApiRequest, NextApiResponse } from 'next'
 import ytdl, { videoFormat } from 'ytdl-core';
-import { IVideoFormat } from '../../types/videoFormats';
 import { promisify } from "util";
 import { pipeline } from "stream";
 
@@ -10,6 +9,13 @@ const pipelineAsync = promisify(pipeline);
 interface Error {
     error: string;
 }
+
+export const config = {
+    api: {
+      responseLimit: false,
+    },
+}
+
 export default async function handler(
     req: NextApiRequest,
     res: NextApiResponse<string | Error>
