@@ -16,7 +16,7 @@ const HomeContainer = () => {
     };
 
     const fetchSearch = () => axios
-        .get("http://localhost:3000/api/video-info", { params: { url: searchValue } })
+        .get(window.location + "/api/video-info", { params: { url: searchValue } })
         .then(({ data }: { data: ResponseVideoInfo }) => data)
 
     const { isLoading, isError, isSuccess, data, refetch } = useQuery(

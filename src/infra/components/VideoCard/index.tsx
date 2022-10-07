@@ -15,7 +15,7 @@ const VideoCard = ({ format, itag, quality, videoId, hasAudio, hasVideo, content
 
     // Colocar funcao em outro lugar
     const fetchDownloadVideo = () => {
-        window.open("http://localhost:3000/api/download-video?videoId=" + videoId + "&itag=" + itag + "&quality=" + quality + "&hasAudio=" + hasAudio + "&hasVideo=" + hasVideo + "&contentLength=" + contentLength, "_blank");
+        window.open(window.location + "/api/download-video?videoId=" + videoId + "&itag=" + itag + "&quality=" + quality + "&hasAudio=" + hasAudio + "&hasVideo=" + hasVideo + "&contentLength=" + contentLength, "_blank");
     }
 
     return (
@@ -36,7 +36,7 @@ const VideoCard = ({ format, itag, quality, videoId, hasAudio, hasVideo, content
                         </span>
 
                         <span>
-                            {contentLength ? `(${formatBytes(Number(contentLength))})`: "Not informed"}
+                            {contentLength ? `(${formatBytes(Number(contentLength))})` : "Not informed"}
                         </span>
 
                     </div>
