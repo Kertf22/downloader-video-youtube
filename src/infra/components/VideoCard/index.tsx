@@ -15,7 +15,7 @@ const VideoCard = ({ format, itag, quality, videoId, hasAudio, hasVideo, content
 
     // Colocar funcao em outro lugar
     const fetchDownloadVideo = () => {
-        window.open(window.location + "/api/download-video?videoId=" + videoId + "&itag=" + itag + "&quality=" + quality + "&hasAudio=" + hasAudio + "&hasVideo=" + hasVideo + "&contentLength=" + contentLength, "_blank");
+        window.open(window.location + "api/download-video?videoId=" + videoId + "&itag=" + itag + "&quality=" + quality + "&hasAudio=" + hasAudio + "&hasVideo=" + hasVideo + "&contentLength=" + contentLength, "_blank");
     }
 
     return (
