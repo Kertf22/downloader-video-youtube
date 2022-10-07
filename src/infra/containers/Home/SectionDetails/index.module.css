@@ -1,0 +1,24 @@
+
+
+.section-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.section-details-content {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .section-details-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+} */
