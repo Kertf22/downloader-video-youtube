@@ -12,9 +12,6 @@ export interface ResponseVideoInfo {
     tumbleImage:string;
 }
 
-
-
-
 interface Error {
     error: string;
 }
