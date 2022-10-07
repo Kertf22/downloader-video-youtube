@@ -20,7 +20,7 @@ const SectionDetails = () => {
                 <ul>
                     <li>1 - Copy the URL of the video you want to download</li>
                     <li>2 - Paste the URL in the input field</li>
-                    <li>3 - Click on the button "Download"</li>
+                    <li>3 - Click on the button &quot;Download&quot;</li>
                     <li>4 - Our system will process the link and will return the video in diferent formats</li>
                     <li>5 - Now you can choose the format you want and click on option.</li>
                     <li>6 - The download will start automatically</li>
