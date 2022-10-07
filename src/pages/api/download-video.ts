@@ -12,7 +12,7 @@ interface Error {
 
 export const config = {
     api: {
-      responseLimit: false,
+      responseLimit: "350mb",
     },
 }
 
@@ -41,19 +41,22 @@ export default async function handler(
     const video = ytdl(videoUrl, { format });
 
     res.setHeader("Content-Disposition", `attachment; filename="${info.videoDetails.title}.${format?.container}"`);
+    res.setHeader("Content-Type", `${format?.mimeType}`);
     res.setHeader("Content-Length", `${format?.contentLength}`);
 
+    
+    video.on("open", () => {
+        video.pipe(res);
+    });
 
-    await pipelineAsync(video, res).catch((err) => {
-        res.status(500).json({ error: "Internal server error" });
-    })
-
+    video.on("data", (chunk) => {
+        res.write(chunk);
+    });
     video.on("end", () => {
         res.end();
 
         res.send("<script>window.close();</script > ")
     });
-
 };
 
 
