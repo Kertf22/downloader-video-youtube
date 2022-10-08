@@ -1,9 +1,6 @@
-import axios, { AxiosProgressEvent } from 'axios';
-import { useState } from 'react';
 import { IVideoFormat } from '../../../types/videoFormats';
-import { ProgressBar } from '../ProgressBar';
 import styles from './index.module.css';
-import { BsFillCameraVideoFill, BsFillCameraVideoOffFill } from 'react-icons/bs';
+import { BsFillCameraVideoFill } from 'react-icons/bs';
 import { GiSpeaker, GiSpeakerOff } from 'react-icons/gi';
 import { formatBytes } from '../../../util/formtaBytes';
 
@@ -27,7 +24,6 @@ const VideoCard = ({ format, itag, quality, videoId, hasAudio, hasVideo, content
 
                         style={{ backgroundColor: hasVideo && hasAudio ? "#7ab946" : "#b94646" }}>
 
-                        {/* <span>{quality}</span> */}
                         <span>{quality} {format}</span>
 
                         <span>
