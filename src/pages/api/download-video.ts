@@ -42,7 +42,10 @@ export default async function handler(
 
     res.setHeader("Content-Disposition", `attachment; filename="${info.videoDetails.title}.${format?.container}"`);
     res.setHeader("Content-Type", `${format?.mimeType}`);
-    res.setHeader("Content-Length", `${format?.contentLength}`);
+
+
+    if(format?.contentLength) res.setHeader("Content-Length", `${format?.contentLength}`);
+
 
     
     video.on("open", () => {

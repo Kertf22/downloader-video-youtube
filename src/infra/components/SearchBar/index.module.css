@@ -11,6 +11,7 @@
     outline: none;
     min-width: 200px;
     padding: 15px;
+    color:black;
     font-size: 14px;
 }
 
@@ -68,14 +69,4 @@
     background: #e5e5e5;
     color: black;
 }
-
-.searchBar input:disabled {
-    background: #e5e5e5;
-    cursor: not-allowed;
-}
-
-.searchBar input:disabled:hover {
-    background: #e5e5e5;
-}
-
 
