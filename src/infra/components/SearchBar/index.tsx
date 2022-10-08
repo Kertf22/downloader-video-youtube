@@ -13,7 +13,7 @@ const SearchBar = ({ value, isError, onChange, handleSubmit }: ISearchBar) => {
             <input
                 value={value}
                 onChange={onChange}
-                placeholder={"Search for the youtube URL"}
+                placeholder={"Search by the youtube URL"}
                 style={{ color: isError ? "#E10600" : "white" }}
             />
             <button disabled={value.length == 0} onClick={e => handleSubmit()}>Search</button>

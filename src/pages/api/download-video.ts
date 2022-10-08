@@ -3,6 +3,7 @@ import type { NextApiRequest, NextApiResponse } from 'next'
 import ytdl, { videoFormat } from 'ytdl-core';
 import { promisify } from "util";
 import { pipeline } from "stream";
+import { v4 } from "uuid";
 
 const pipelineAsync = promisify(pipeline);
 
@@ -12,7 +13,7 @@ interface Error {
 
 export const config = {
     api: {
-      responseLimit: "350mb",
+        responseLimit: "350mb",
     },
 }
 
@@ -40,14 +41,14 @@ export default async function handler(
 
     const video = ytdl(videoUrl, { format });
 
-    res.setHeader("Content-Disposition", `attachment; filename="${info.videoDetails.title}.${format?.container}"`);
+    res.setHeader("Content-Disposition", `attachment; filename="${v4()}.${format?.container}"`);
     res.setHeader("Content-Type", `${format?.mimeType}`);
 
 
-    if(format?.contentLength) res.setHeader("Content-Length", `${format?.contentLength}`);
+    if (format?.contentLength) res.setHeader("Content-Length", `${format?.contentLength}`);
 
 
-    
+
     video.on("open", () => {
         video.pipe(res);
     });
