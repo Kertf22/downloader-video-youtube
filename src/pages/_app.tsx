@@ -3,6 +3,7 @@ import React from "react";
 import type { AppProps } from 'next/app'
 import { QueryClient, QueryClientProvider } from "react-query";
 import Head from 'next/head';
+import Script from 'next/script';
 
 function MyApp({ Component, pageProps }: AppProps) {
 
@@ -22,12 +23,26 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta property="twitter:url" content="https://savedownhere.com/" />
         <meta property="twitter:title" content="SaveDownHere — Download Videos" />
         <meta property="twitter:description" content="Download youtube videos with high quality easily and fast"></meta>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+        <Script async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_PUBLIC_GOOGLE_ADSENSE_CLIENT}`}
+          crossOrigin="anonymous"></Script>
 
-        <script async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9390787688776809"
-          crossOrigin="anonymous"></script>
 
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-W74SSDF6T5"></script>
+        <Script strategy="lazyOnload" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`} />
+
+        <Script strategy="lazyOnload">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+          page_path: window.location.pathname,
+          });
+      `}
+        </Script>
       </Head>
 
 

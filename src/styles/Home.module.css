@@ -3,7 +3,7 @@
 }
 
 .main {
-  min-height: 100vh;
+  min-height: 80vh;
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -15,8 +15,8 @@
   display: flex;
   flex: 1;
   padding: 2rem 0;
-  /* border-top: 1px solid #eaeaea; */
-  justify-content: center;
+  border-top: 1px solid #a2a0a0;
+  justify-content: space-around;
   align-items: center;
 }
 

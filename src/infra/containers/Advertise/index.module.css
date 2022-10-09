@@ -1,0 +1,23 @@
+
+
+.advetise {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.advetise div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 640px;
+    height: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+.advetise a {
+    color: rgb(154, 53, 53);
+    margin-left: 5px;
+}
