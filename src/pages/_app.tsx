@@ -14,7 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
       <Head>
         <title>SaveDownHere — Download Videos</title>
-        <meta name="description" content="Download youtube videos with high quality easily and fast" />
+        <meta name="description" content="Download youtubevideos with high quality easily and fast" />
         <link rel="shortcut icon" href="/images/favicon.ico" />
 
         <meta property="og:type" content="website" />

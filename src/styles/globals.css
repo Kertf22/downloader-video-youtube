@@ -24,15 +24,12 @@ a {
 * {
   box-sizing: border-box;
 }
-
+body {
+  color: black;
+  background: #bac6ca;
+}
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
-  }
-
-  body {
-    color: black;
-    background: #bac6ca;
-
   }
 }
