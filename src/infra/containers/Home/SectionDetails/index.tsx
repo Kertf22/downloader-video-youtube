@@ -47,7 +47,7 @@ const SectionDetails = () => {
                         </h4>
                         <p>
                             Our system is very fast, it will return the video in a few seconds.
-                            It's basieded in inteligent algorithms that will process the video and return the result in the speed of light. In this place you just need to follow some steps and the results will be in your hands. You wont need to log in or create an account, just use our system and download your favorite videos and audios.
+                            It&lsquo;s basieded in inteligent algorithms that will process the video and return the result in the speed of light. In this place you just need to follow some steps and the results will be in your hands. You wont need to log in or create an account, just use our system and download your favorite videos and audios.
 
                         </p>
                     </li>
