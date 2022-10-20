@@ -1,5 +1,6 @@
 import type { NextPage } from 'next'
 import { HomeContainer } from '../infra/containers/Home'
+import Footer from '../infra/layout/Footer'
 import Nav from '../infra/layout/Nav'
 import styles from '../styles/Home.module.css'
 const Home: NextPage = () => {
@@ -13,16 +14,7 @@ const Home: NextPage = () => {
         <HomeContainer />
       </main>
 
-      <footer className={styles.footer}>
-        <span>
-          All rights reserved © SaveDownHere 2022
-        </span>
-
-        <span>
-          Powered by Paulo Hercílio
-        </span>
-
-      </footer>
+      <Footer />
     </div>
   )
 }

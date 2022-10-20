@@ -2,6 +2,7 @@
 
 import type { NextPage } from 'next'
 import { ContactContainer } from '../infra/containers/Contact'
+import Footer from '../infra/layout/Footer'
 import Nav from '../infra/layout/Nav'
 import styles from '../styles/Home.module.css'
 const Contact: NextPage = () => {
@@ -15,16 +16,7 @@ const Contact: NextPage = () => {
         <ContactContainer />
       </main>
 
-      <footer className={styles.footer}>
-        <span>
-          All rights reserved © SaveDownHere 2022
-        </span>
-
-        <span>
-          Powered by Paulo Hercílio
-        </span>
-
-      </footer>
+      <Footer />
     </div>
   )
 }

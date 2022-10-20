@@ -1,0 +1,20 @@
+.footer {
+    display: flex;
+    flex: 1;
+    padding: 2rem 0;
+    border-top: 1px solid #a2a0a0;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .footer a {
+    /* blue link */
+    color:  #007bff;
+    text-decoration: none;
+  
+  };
+
+  .footer a:hover {
+      /* blue link hover */
+      color: #0056b3;
+  }

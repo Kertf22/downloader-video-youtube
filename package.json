@@ -17,6 +17,7 @@
     "react-icons": "^4.4.0",
     "react-loading": "^2.0.3",
     "react-query": "^3.39.2",
+    "sitemap": "^7.1.1",
     "uuid": "^9.0.0",
     "ytdl": "^1.4.1"
   },
