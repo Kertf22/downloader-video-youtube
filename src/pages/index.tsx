@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <HomeContainer />
       </main>
-
+     
       <Footer />
     </div>
   )

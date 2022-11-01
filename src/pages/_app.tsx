@@ -13,18 +13,18 @@ function MyApp({ Component, pageProps }: AppProps) {
     <QueryClientProvider client={queryClient}>
 
       <Head>
-        <title>SaveDownHere — Download Videos</title>
-        <meta name="description" content="Download youtubevideos with high quality easily and fast" />
+      <title>SaveDownHere — Download Youtube Videos For Free</title>
+        <meta name="description" content="Download youtube videos for free with high quality easily and fast. Download youtube videos online without the need to install app." />
         <link rel="shortcut icon" href="/images/favicon.ico" />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://savedownhere.com/" />
-        <meta property="og:title" content="SaveDownHere — Download Videos" />
-        <meta property="og:description" content="Download youtube videos with high quality easily and fast" />
+        <meta property="og:title" content="SaveDownHere — Download Youtube Videos For free" />
+        <meta property="og:description" content="Download youtube videos for free with high quality easily and fast. Download youtube videos online without the need to install app." />
 
         <meta property="twitter:url" content="https://savedownhere.com/" />
-        <meta property="twitter:title" content="SaveDownHere — Download Videos" />
-        <meta property="twitter:description" content="Download youtube videos with high quality easily and fast"></meta>
+        <meta property="twitter:title" content="SaveDownHere — Download Youtube Videos For free" />
+        <meta property="twitter:description" content="Download youtube videos for free with high quality easily and fast. Download youtube videos online without the need to install app."></meta>
 
       </Head>
 
