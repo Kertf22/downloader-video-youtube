@@ -1,4 +1,10 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
 User-agent: *
 Allow: /
 
-sitemap.xml
+Sitemap: https://savedownhere.com/api/my-sitemap
+Sitemap: http://savedownhere.com/api/my-sitemap
+Sitemap: https://www.savedownhere.com/api/my-sitemap
+Sitemap: http://www.savedownhere.com/api/my-sitemap
